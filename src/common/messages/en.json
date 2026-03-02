@@ -1,0 +1,183 @@
+{
+	"user": {
+		"notFound": "user not found",
+		"alreadyExist": "user already exist",
+		"failToCreate": "fail to create user",
+		"failToUpdate": "fail to update user",
+		"createdSuccessfully": "user created Successfully",
+		"updatedSuccessfully": "user updated Successfully",
+		"getAll": "get all users successfully",
+		"getSpecific": "get specific user successfully",
+		"changedPasswordSuccessfully": "user password changed Successfully, please login",
+		"changedEmailSuccessfully": "user email changed Successfully, please check your email to verify",
+		"deletedSuccessfully": "user deleted Successfully",
+		"invalid": "user invalid",
+		"phone": "phone already exist",
+		"email": "email already exist",
+		"notConfirmed": "please confirm your email first",
+		"alreadyVerified": "account is already verified",
+		"verifiedSuccessfully": "account verified successfully",
+		"invaledLogin": "email or password is incorrect",
+		"invaledDeviceId": "you cannot open your account in different device",
+		"login": "login successfully",
+		"signupSuccess": "signup successfully.",
+		"setPasswordSuccessfully": "Password entered successfully, Please login.",
+		"invalidcrendential": "invalid credential",
+		"verfiedSuccessfully": "verified successfully",
+		"profileFetchSuccessfully": "user profile fetched successfully"
+	},
+	"image": {
+		"coverUploaded": "cover images uploaded successfully",
+		"invalidImage": "invalid image",
+		"notFoundImage": "you don't have any image",
+		"uploaded": "image.uploaded"
+	},
+	"OTP": {
+		"haveOTP": "you already have OTP",
+		"expiredOTP": "OTP has expired",
+		"OTPSent": "check your email",
+		"invalidOTP": "invalid OTP"
+	},
+	"token": {
+		"invalid": "invalid bearer token",
+		"unauthenticate": "unauthenticated",
+		"unauthorized": "unauthorized",
+		"refreshToken": "refreshToken"
+	},
+	"banner": {
+		"notFound": "banner not found",
+		"getAll": "get all banner successfully",
+		"getSpecific": "get specific banner successfully",
+		"alreadyExist": "banner already exists",
+		"requiredBanner": "banner is required",
+		"createdSuccessfully": "banner created successfully",
+		"updatedSuccessfully": "banner updated successfully",
+		"deletedSuccessfully": "banner deleted Successfully"
+	},
+	"notAuthorized": "You are not authorized to do this.",
+	"internalServicerError": "please try again later",
+	"course": {
+		"searchNameRequired": "Please write a term to search.",
+		"notFound": "Course not found",
+		"alreadyExist": "Course already exists",
+		"failToCreate": "Failed to create course",
+		"failToUpdate": "Failed to update course",
+		"createdSuccessfully": "Course created successfully",
+		"updatedSuccessfully": "Course updated successfully",
+		"getAll": "All courses retrieved successfully",
+		"getSpecific": "Course retrieved successfully",
+		"changedPasswordSuccessfully": "Password changed successfully",
+		"changedEmailSuccessfully": "Email changed successfully",
+		"deletedSuccessfully": "Course deleted successfully",
+		"invalid": "Invalid course data",
+		"joinCourseSuccessfully": "Joined course successfully",
+		"shouldBeInstructor": "User should be an instructor",
+		"studentAlreadyJoined": "Student already joined this course",
+		"userNotEnrolled": "User is not enrolled in this course or any of its sections",
+		"freeVideoRequired": "A free video is required",
+		"getAllPayed": "All payed courses retrieved successfully",
+		"videoNotFound": "Video not found in this section",
+		"materialNotFound": "material not found in this section",
+		"freeVideoNotFound": "Free video not found",
+		"cannotDeleteActiveCourse": "Cannot delete active course",
+		"joinSuccessfully": "join successfully",
+		"notWatchedAllVideos": "You must watch all videos in the course to obtain the certificate",
+		"notPaied": "you not paied for this course",
+		"section": {
+			"videoRequired": "Every section must contain a video",
+			"studentAlreadyJoined": "Student already joined this section",
+			"updatedSuccessfully": "Section updated successfully",
+			"joinSectionSuccessfully": "Joined section successfully",
+			"notFound": "section not found",
+			"getAll": "All sections retrieved successfully",
+			"getSpecific": "section retrieved successfully",
+			"sectionNotFound": "section not found",
+			"joinSuccessfully": "join in this section successfully",
+			"notPaied": "you not paied for this section",
+			"questionAddedSuccessfully": "question added successfully"
+		},
+		"certificate": {
+			"createdSuccessfully": "certificate created successfully",
+			"updatedSuccessfully": "certificate updated successfully",
+			"notFound": "certificate not found",
+			"getSpecific": "certificate retrieved successfully",
+			"fileRequired": "certificate is required",
+			"cannotUpdateAfterStudentsJoined": "cannot update certificate after students joined",
+			"getAll": "all certificates retrieved successfully",
+			"userNotHaveCertificates": "user does not have any certificates",
+			"userNotHaveCertificate": "user does not have this certificate"
+		}
+	},
+	"instructor": {
+		"haveNotSalaryAccount": "you do not have a salary account",
+		"getSalary": "salary retrieved successfully",
+		"getAllInstructors": "all instructors retrieved successfully",
+		"salaryCannotBeNegative": "salary cannot be negative"
+	},
+	"university": {
+		"notFound": "university not found",
+		"alreadyExist": "university already exists",
+		"failToCreate": "failed to create university",
+		"failToUpdate": "failed to update university",
+		"createdSuccessfully": "university created successfully",
+		"updatedSuccessfully": "university updated successfully",
+		"deletedSuccessfully": "university deleted successfully",
+		"getAll": "all universities retrieved successfully",
+		"getSpecific": "university retrieved successfully",
+		"invalid": "invalid university data",
+		"faculty": {
+			"notFound": "faculty not found",
+			"alreadyExist": "faculty already exists",
+			"failToCreate": "failed to create faculty",
+			"failToUpdate": "failed to update faculty",
+			"createdSuccessfully": "faculty created successfully",
+			"updatedSuccessfully": "faculty updated successfully",
+			"deletedSuccessfully": "faculty deleted successfully",
+			"getAll": "all faculties retrieved successfully",
+			"getSpecific": "faculty retrieved successfully",
+			"invalid": "invalid faculty data",
+			"specialization": {
+				"notFound": "specialization not found",
+				"alreadyExist": "specialization already exists",
+				"failToCreate": "failed to create specialization",
+				"failToUpdate": "failed to update specialization",
+				"createdSuccessfully": "specialization created successfully",
+				"updatedSuccessfully": "specialization updated successfully",
+				"deletedSuccessfully": "specialization deleted successfully",
+				"getAll": "all specializations retrieved successfully",
+				"getSpecific": "specialization retrieved successfully",
+				"invalid": "invalid specialization data"
+			}
+		}
+	},
+	"payment": {
+		"itemNotFound": "item not found",
+		"failedCreateSession": "Failed to create payment session",
+		"invalidPaymentType": "Invalid payment type",
+		"invalidTransaction": "Payment not successfull",
+		"paymentRecordedSuccessfully": "Payment session created successfully",
+		"paymentRecordedNotFound": "Payment record not found",
+		"currencyMismatch": "Payment amount or currency missmatch"
+	},
+	"Video \"Video 1\" has name but no file uploaded": "Video \"Video 1\" has name but no file uploaded",
+	"Video \"Video 2\" has name but no file uploaded": "Video \"Video 2\" has name but no file uploaded",
+	"updated": "updated",
+	"section notfound": "section notfound",
+	"Payment required to join this course. Please complete payment first.": "Payment required to join this course. Please complete payment first.",
+	"Payment session created successfully": "Payment session created successfully",
+	"Request failed with status code 400": "Request failed with status code 400",
+	"connect ETIMEDOUT 103": {
+		"55": {
+			"149": {
+				"32": "443"
+			}
+		}
+	},
+	"Request failed with status code 404": "Request failed with status code 404",
+	"Cannot read properties of undefined (reading 'id')": "Cannot read properties of undefined (reading 'id')",
+	"Failed to create payment session": "Failed to create payment session",
+	"Payment session ready": "Payment session ready",
+	"Cannot destructure property 'courseId' of 'req.body' as it is undefined.": "Cannot destructure property 'courseId' of 'req.body' as it is undefined.",
+	"course or section notfound": "course or section notfound",
+	"Payment not successfull": "Payment not successfull"
+}
