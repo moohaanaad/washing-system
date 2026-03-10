@@ -34,6 +34,7 @@ export const signup = async (req, res, next) => {
     if (userExict?.email == req.body.email) errorResponse({ res, message: messages.user.email, statusCode: 400 })
     if (userExict?.phone == req.body.phone) errorResponse({ res, message: messages.user.phone, statusCode: 400 })
 
+    console.log(req.body);
     
     //save acc
     const createdUser = await User.create(req.body)
@@ -95,7 +96,7 @@ export const verify = async (req, res, next) => {
 
 //login
 export const login = async (req, res, next) => {
-    let { email, password, deviceId } = req.body
+    let { email, password } = req.body
 
     const userExist = await User.findOne({ email })
     if (!userExist) errorResponse({ res, message: messages.user.invaledLogin, statusCode: 404 })
@@ -133,7 +134,7 @@ export const login = async (req, res, next) => {
 export const refreshToken = async (req, res, next) => {
 
 
-    const { refresh_token, deviceId } = req.body
+    const { refresh_token } = req.body
 
     //verify token 
     const result = verifyToken({ token: refresh_token })

@@ -15,20 +15,19 @@ export const signupVal = joi.object({
         city: joi.string().required(),
         street: joi.string().required(),
         homeLocation: joi.string().required()
-    })
+    }),
+    otherLocation: joi.string()
 })
 
 //login
 export const signinVal = joi.object({
     email: joi.string().email().required(),
-    password: joi.string().required(),
-    deviceId: joi.string().required()
+    password: joi.string().required()
 })
 
 // refresh token
 export const refreshToken = joi.object({
-    refresh_token: joi.string().required(),
-    deviceId: joi.string().required()
+    refresh_token: joi.string().required()
 })
 
 export const vrefiy = joi.object({
