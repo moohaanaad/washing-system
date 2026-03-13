@@ -6,7 +6,9 @@ import { verifyToken } from "../utils/token/index.js"
 
 export const isAuthenticate = () => {
     return async (req, res, next) => {
-        const { token } = req.headers
+        const  token  = req.headers.authorization
+        console.log(token);
+        
         //check token start with Bearer
         if (!token || !token.startsWith("Bearer"))
             errorResponse({ res, message: messages.token.invalid, statusCode: 401 })
@@ -20,11 +22,7 @@ export const isAuthenticate = () => {
 
         //check user existence
 
-        const userExist = await User.findOne(
-            { _id: result._id, isActive: true }
-        ).populate('university', 'name')
-            .populate('faculty', 'name')
-            .populate('Specializations', 'name')
+        const userExist = await User.findOne({ _id: result._id, isActive: true })
         if (!userExist)
             return next(new Error(messages.token.unauthenticate, { cause: 401 }))
 

@@ -3,5 +3,10 @@
 
 export const globalErrorHandling = (error, req, res, next) => {
     
-    return res.status(error.cause || 500).json({ message: error.message || error, success: false })
+const statusCode = error.statusCode || 500
+
+  return res.status(statusCode).json({
+    success: false,
+    message: req.__(error.message)
+  })
 }

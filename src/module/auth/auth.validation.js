@@ -26,21 +26,21 @@ export const signinVal = joi.object({
 })
 
 // refresh token
-export const refreshToken = joi.object({
+export const refreshTokenVal = joi.object({
     refresh_token: joi.string().required()
 })
 
-export const vrefiy = joi.object({
+export const vrefiyVal = joi.object({
     email: joi.string().email().required(),
     otp: joi.string().required()
 })
 
-export const forgetPassword = joi.object({
+export const forgetPasswordVal = joi.object({
     email: joi.string().email().required()
 })
 
 
-export const changePassword = joi.object({
+export const changePasswordVal = joi.object({
     email: joi.string().email().required(),
     otp: joi.string().required(),
     password: joi.string().required(),

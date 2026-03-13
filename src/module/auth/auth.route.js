@@ -19,13 +19,13 @@ authRouter.patch('/resend', asyncHandler(authController.resendOTP))
 
 // refresh token
 authRouter.patch('/refresh-token',
-    isValid(val.refreshToken), asyncHandler(authController.refreshToken))
+    isValid(val.refreshTokenVal), asyncHandler(authController.refreshToken))
 
 //forget password
-authRouter.patch('/forget-password', isValid(val.forgetPassword), asyncHandler(authController.forgetPassword))
+authRouter.patch('/forget-password', isValid(val.forgetPasswordVal), asyncHandler(authController.forgetPassword))
 
 //change password
-authRouter.put('/change-password', isValid(val.changePassword), asyncHandler(authController.changePassword))
+authRouter.put('/change-password', isValid(val.changePasswordVal), asyncHandler(authController.changePassword))
 
 
 export default authRouter

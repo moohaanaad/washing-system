@@ -49,68 +49,8 @@ export const messages = {
         unauthorized: "token.unauthorized",
         refreshToken: "token.refreshToken"
     },
-    banner: {
-        ...generateMessageKeys("banner"),
-        requiredBanner: "banner.requiredBanner"
-    },
-    course: {
-        ...generateMessageKeys('course'),
-        searchNameRequired: "course.searchNameRequired",
-        getAllPayed: "course.getAllPayed",
-        joinCourseSuccessfully: "course.joinSuccessfully",
-        shouldBeInstructor: "course.shouldBeInstructor",
-        studentAlreadyJoined: "course.studentAlreadyJoined",
-        userNotEnrolled: "course.userNotEnrolled",
-        freeVideoRequired: "course.freeVideoRequired",
-        videoNotFound: "course.videoNotFound",
-        materialNotFound: "course.materialNotFound",
-        freeVideoNotFound: "course.freeVideoNotFound",
-        cannotDeleteActiveCourse: "course.cannotDeleteActiveCourse",
-        joinSuccessfully: "course.joinSuccessfully",
-        notWatchedAllVideos: "course.notWatchedAllVideos",
-        notPaied: "course.notPaied",
-        section: {
-            videoRequired: "course.section.videoRequired",
-            studentAlreadyJoined: "course.section.studentAlreadyJoined",
-            updatedSuccessfully: "course.section.updatedSuccessfully",
-            joinSectionSuccessfully: "course.section.joinSuccessfully",
-            notFound: "course.section.notFound",
-            getAll: "course.section.getAll",
-            getSpecific: "course.section.getSpecific",
-            notPaied: "course.section.notPaied",
-            questionAddedSuccessfully: "course.section.questionAddedSuccessfully"
-        },
-        certificate: {
-            ...generateMessageKeys('course.certificate'),
-            fileRequired: "course.certificate.fileRequired",
-            cannotUpdateAfterStudentsJoined: "course.certificate.cannotUpdateAfterStudentsJoined",
-            userNotHaveCertificates: "course.certificate.userNotHaveCertificates",
-            userNotHaveCertificate: "course.certificate.userNotHaveCertificate"
-        }
-    },
-    instructor: {
-        haveNotSalaryAccount: "instructor.haveNotSalaryAccount",
-        getSalary: "instructor.getSalary",
-        getAllInstructors: "instructor.getAllInstructors",
-        salaryCannotBeNegative: "instructor.salaryCannotBeNegative"
-    },
-    university:{
-        faculty:{
-            specialization: {
-                ...generateMessageKeys("university.faculty.specialization"),
-            },
-            ...generateMessageKeys("university.faculty"),
-        },
-        ...generateMessageKeys("university"),
-    },
-    payment:{
-        itemNotFound: "payment.itemNotFound",
-        failedCreateSession: "payment.failedCreateSession",
-        invalidPaymentType: "payment.invalidPaymentType",
-        invalidTransaction: "payment.invalidTransaction",
-        paymentRecordedSuccessfully: "payment.paymentRecordedSuccessfully",
-        paymentRecordedNotFound: "payment.paymentRecordedNotFound",
-        currencyMismatch: "payment.currencyMismatch",
+    car:{
+        ...generateMessageKeys("car")
     },
     notAuthorized: "general.notAuthorized",
     internalServicerError: "general.internalServicerError"
