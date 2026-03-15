@@ -49,7 +49,11 @@
 		"notFound": "car not found",
 		"alreadyExist": "car already exist",
 		"failToCreate": "fail to create car",
-		"failToUpdate": "fail to update car"
+		"failToUpdate": "fail to update car",
+		"getAll": "all cars of user fetched successfully",
+		"getSpecific": "specific car fetched successfully",
+		"updatedSuccessfully": "car.updatedSuccessfully",
+		"deletedSuccessfully": "car.deletedSuccessfully"
 	},
 	"notAuthorized": "You are not authorized to do this.",
 	"internalServicerError": "please try again later",
@@ -86,5 +90,6 @@
 	"E11000 duplicate key error collection": " test.cars index: plateNumber_1 dup key: { plateNumber: \"234 صبث\" }",
 	"Cannot destructure property 'token' of 'req.Authorization' as it is undefined.": "Cannot destructure property 'token' of 'req.Authorization' as it is undefined.",
 	"Cannot destructure property 'Token' of 'req.Authorization' as it is undefined.": "Cannot destructure property 'Token' of 'req.Authorization' as it is undefined.",
-	"Cannot read properties of undefined (reading 'invalid')": "Cannot read properties of undefined (reading 'invalid')"
+	"Cannot read properties of undefined (reading 'invalid')": "Cannot read properties of undefined (reading 'invalid')",
+	"\"brand\" is not allowed,\"model\" is not allowed,\"carId\" is not allowed": "\"brand\" is not allowed,\"model\" is not allowed,\"carId\" is not allowed"
 }

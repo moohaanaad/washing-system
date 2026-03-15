@@ -54,6 +54,22 @@ export const updateCar = async (carId, body, userId) => {
     return carExist
 }
 
+// get all cars of user
+export const getAllCars = async (userId) => {
+    const cars = await Car.find({ owner: userId })
+    return cars
+}
+
+// get specific car of user
+export const getSpecificCar = (carId, userId) => {
+    const carExist = Car.findOne({ _id: carId, owner: userId })
+    if (!carExist) {
+        throw new Error(messages.car.notFound, 404)
+    }
+    return carExist
+}
+
+// delete car
 export const deleteCar = async (carId, userId) => {
     const carExist = await Car.findOne({ _id: carId, owner: userId })
     if (!carExist) {

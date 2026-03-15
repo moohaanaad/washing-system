@@ -7,7 +7,6 @@ import { verifyToken } from "../utils/token/index.js"
 export const isAuthenticate = () => {
     return async (req, res, next) => {
         const  token  = req.headers.authorization
-        console.log(token);
         
         //check token start with Bearer
         if (!token || !token.startsWith("Bearer"))

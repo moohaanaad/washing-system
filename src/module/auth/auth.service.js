@@ -30,10 +30,10 @@ export const signup = async (body) => {
 
     const { email, phone } = body
 
-    //check exictence
-    const userExict = await User.findOne({ $or: [{ email }, { phone }] })
-    if (userExict?.email == email) throw new AppError(messages.user.email, 400)
-    if (userExict?.phone == phone) throw new AppError(messages.user.phone, 400)
+    //check existence
+    const userExist = await User.findOne({ $or: [{ email }, { phone }] })
+    if (userExist?.email == email) throw new AppError(messages.user.email, 400)
+    if (userExist?.phone == phone) throw new AppError(messages.user.phone, 400)
 
     //save acc
     const createdUser = await User.create(body)
